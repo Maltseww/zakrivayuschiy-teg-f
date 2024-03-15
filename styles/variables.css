@@ -19,4 +19,10 @@
   --main-inline-size: clamp(23.43rem, 16.2751rem + 30.5277vw, 43.75rem);
 
   --color-img-label: var(--bg-color);
+
+  --save-color: var(--bg-color);
+
+  --contour-color: var(--main-color);
+  --heart-sparks-color: #ff0000;
+  
 }

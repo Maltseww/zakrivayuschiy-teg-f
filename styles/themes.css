@@ -19,6 +19,7 @@
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 
     --color-img-label: var(--bg-color);
+    --save-color: var(--bg-color);
 }
 
 :root.theme-dark {
@@ -26,6 +27,7 @@
   --heading-font-weight: 785;
   --main-color: #00cc14;
   --bg-color: #000000;
+  --save-color: var(--main-color);
 
   --bg-image: repeating-linear-gradient(
       to left,
@@ -44,6 +46,7 @@
     --heading-font-weight: 785;
     --main-color: #00cc14;
     --bg-color: #000000;
+    --save-color: var(--main-color);
 
     --bg-image: repeating-linear-gradient(
         to left,
