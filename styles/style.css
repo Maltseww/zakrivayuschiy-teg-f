@@ -39,7 +39,7 @@
 
 .header__logo {
   color: inherit;
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family),sans-serif ;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   font-weight: var(--main-font-family-weight);
   text-transform: uppercase;
@@ -54,7 +54,7 @@
 }
 
 .header__title {
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), sans-serif;
   font-weight: var(--main-font-family-weight);
   text-transform: uppercase;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
@@ -71,7 +71,7 @@
 }
 
 .theme-menu__button {
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), sans-serif;
   font-weight: var(--main-font-family-weight);
   font-size: 14px;
   background: transparent;
@@ -128,12 +128,12 @@
 }
 
 .section__card-title {
-  font-variation-settings: var(--main-font-family);
+  font-family: var(--main-font-family);
   font-size: 18px;
   line-height: 21px;
   color: var(--main-color);
   padding: 5px 10px;
-  font-variation-settings: "wght" var(--heading-font-weight);
+  font-variation-settings:  "wght" var(--heading-font-weight);
 }
 
 .section__card-image {
@@ -144,8 +144,8 @@
 }
 
 .section__content {
-  font-variation-settings: var(--main-font-family);
-  font-variation-settings: "wght" var(--main-font-family-weight);
+  font-family: var(--main-font-family);
+  font-variation-settings:  "wght" var(--main-font-family-weight) ;
   line-height: 21px;
   font-size: 18px;
   padding-inline: 25px;
@@ -166,17 +166,29 @@
   background-color: transparent;
   border: 2px solid var(--main-color);
   padding-block: 9px;
+  min-inline-size: 130px;
+  padding-block: 9px;
 }
 
 .button__text {
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), sans-serif;
   font-weight: var(--main-font-family-weight);
   line-height: 12px;
+  position: relative;
+  color: var(--main-color);
+  font-family: var(--accent-font-family, sans-serif);
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 90%;
 }
 
 .card__icon-button {
   background-color: transparent;
   border: none;
+  background-color: transparent;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  max-block-size: 38px;
 }
 
 .section__wrapper {
@@ -189,7 +201,7 @@
   inset-block-start: 25px;
   inset-inline-end: 25px;
   color: inherit;
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family),sans-serif;
   font-weight: var(--main-font-family-weight);
   font-size: 14px;
   line-height: 14px;
@@ -207,12 +219,7 @@
   }
 }
 
-.card__icon-button {
-  background-color: transparent;
-  border: 2px solid transparent;
-  transition: border-color 0.3s ease;
-  max-block-size: 38px;
-}
+
 
 .card__icon-button:focus {
   outline: none;
@@ -222,10 +229,7 @@
   border-color: currentColor;
 }
 
-.card__like-button {
-  min-inline-size: 130px;
-  padding-block: 9px;
-}
+
 
 .content-button {
   position: relative;
@@ -260,15 +264,6 @@
 
 .content-button:hover::after {
   translate: 0%;
-}
-
-.button__text {
-  position: relative;
-  color: var(--main-color);
-  font-family: var(--accent-font-family, sans-serif);
-  font-size: 14px;
-  font-weight: inherit;
-  line-height: 90%;
 }
 
 .footer {
@@ -326,7 +321,7 @@
 
 .popup__content-text {
   color: var(--main-color);
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family),sans-serif;
   font-size: 14px;
   font-weight: var(--main-font-family-weight);
   line-height: 21px;
