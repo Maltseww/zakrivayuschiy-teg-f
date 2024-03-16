@@ -58,7 +58,7 @@
 
 .like-icon.is-liked .main-body {
   fill: var(--heart-sparks-color);
-  transition: fill 0.3s 0.35s linear;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon .contour {
@@ -73,11 +73,11 @@
 
 .like-icon.is-liked .heart {
   transform-origin: center;
-  animation: heart 0.3s 0.1s ease-in;
+  animation: heart 0.3s 0.1s alternate;
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks 0.3s 0.3s ease-in;
+  animation: sparks 0.3s 0.3s alternate;
 }
 
 @keyframes heart {

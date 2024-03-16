@@ -18,7 +18,7 @@
   </head>
   <body class="page">
     <header class="header content-section">
-      <a class="header__logo" href="#"> &lt;/HTML&gt; </a>
+      <a class="header__logo"> &lt;/HTML&gt; </a>
       <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -47,7 +47,7 @@
       </nav>
     </header>
     <main class="main content-section">
-      <section class="section__card">
+      <article class="section__card">
         <h2 class="section__card-title">
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
@@ -103,9 +103,9 @@
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="section__card">
+      <article class="section__card">
         <h2 class="section__card-title">
           1 спринт: Я — чистый лист
         </h2>
@@ -159,9 +159,9 @@
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="section__card">
+      <article class="section__card">
         <h2 class="section__card-title">
           1 спринт: А если не получится?
         </h2>
@@ -217,9 +217,9 @@
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="section__card">
+      <article class="section__card">
         <h2 class="section__card-title">
           2 спринт: Погоня за идеалом
         </h2>
@@ -274,9 +274,9 @@
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="section__card">
+      <article class="section__card">
         <h2 class="section__card-title">
           2 спринт: О тех, кто рядом
         </h2>
@@ -334,9 +334,9 @@
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="section__card">
+      <article class="section__card">
         <h2 class="section__card-title">
           3 спринт: Обходные стратегии
         </h2>
@@ -392,9 +392,9 @@
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="section__card">
+      <article class="section__card">
         <h2 class="section__card-title">
           3 спринт: Когда опускаются руки
         </h2>
@@ -450,9 +450,9 @@
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="section__card">
+      <article class="section__card">
         <h2 class="section__card-title">
           «Сейчас я здесь»
         </h2>
@@ -509,43 +509,46 @@
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
+      <div class="pseydo__footer">
+      <button
+      class="footer__save-button content-button"
+      type="button"
+      onclick="window['dialog-id'].showModal()"
+      aria-controls="dialog-id"
+    >
+      <svg class="floppy-icon" viewBox="0 0 39 39">
+        <use href="./svg/floppy-2.svg#floppy" />
+      </svg>
+      <span class="button__text">Сохранить на память</span>
+    </button>
+
+  <dialog id="dialog-id" class="popup">
+    <div class="popup__content">
+      <svg
+        class="popup__content-icon floppy-icon"
+        aria-hidden="true"
+        viewbox="0 0 39 39"
+      >
+        <use href="./svg/floppy-2.svg#floppy" />
+      </svg>
+      <p class="popup__content-text">Вставьте дискету, чтобы продолжить</p>
+    </div>
+    <form method="dialog" class="popup__content-form">
+      <button
+        class="button-close content-button"
+        type="button"
+        onclick="window['dialog-id'].close()"
+      >
+        <span class="button__text uppercase__text-dialog"> ок </span>
+      </button>
+    </form>
+  </dialog>
+</div>
 
     </main>
-    <footer class="footer">
-      <button
-        class="footer__save-button content-button"
-        type="button"
-        onclick="window['dialog-id'].showModal()"
-        aria-controls="dialog-id"
-      >
-        <svg class="floppy-icon" viewBox="0 0 39 39">
-          <use href="./svg/floppy-2.svg#floppy" />
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-    </footer>
-    <dialog id="dialog-id" class="popup">
-      <div class="popup__content">
-        <svg
-          class="popup__content-icon floppy-icon"
-          aria-hidden="true"
-          viewbox="0 0 39 39"
-        >
-          <use href="./svg/floppy-2.svg#floppy" />
-        </svg>
-        <p class="popup__content-text">Вставьте дискету, чтобы продолжить</p>
-      </div>
-      <form method="dialog" class="popup__content-form">
-        <button
-          class="button-close content-button"
-          type="button"
-          onclick="window['dialog-id'].close()"
-        >
-          <span class="button__text"> ОК </span>
-        </button>
-      </form>
-    </dialog>
+  
+
     <script src="./scripts/like.js"></script>
   </body>
 </html>
