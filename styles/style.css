@@ -91,12 +91,14 @@
   content: "▶";
   opacity: 0.6;
   position: absolute;
-  inset-inline-start: -20px 0px;
+  top: 0px;
+  left: -20px;
   animation: move-arrow 0.5s ease-in-out infinite alternate;
 }
 
 .theme-menu__button:disabled {
   pointer-events: none;
+  opacity: 0.6;
 }
 
 .theme-menu__button:hover {
@@ -111,10 +113,9 @@
 .theme-menu__button::after {
   content: "";
   display: block;
-  position: absolute;
-  width: 85%;
+  inline-size: 100%;
   scale: 0;
-  height: 2px;
+  block-size: 2px;
   background-color: var(--main-color);
   transform-origin: left;
   transition: scale 0.3s ease;
@@ -211,8 +212,8 @@
 
 .section__wrapper__img-label {
   position: absolute;
-  inset-block-start: 25px;
-  inset-inline-end: 25px;
+  inset-block-start: clamp(23px, 1.3935rem + 0.1878vw, 25px);
+  inset-inline-end: clamp(11px, 0.3794rem + 1.3146vw, 25px);
   color: inherit;
   font-family: var(--accent-font-family), fantasy, sans-serif;
   font-weight: var(--main-font-family-weight);
